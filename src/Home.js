@@ -5,18 +5,26 @@ import {
   Container,
   Row,
   Col,
+  Breadcrumb,
    } from 'react-bootstrap';
+ import {LinkContainer} from "react-router-bootstrap";
  
  
 
 function Home() {
   return (
     <div >
-      
 <Container >
+<Breadcrumb>
+<LinkContainer to="/">
+   <Breadcrumb.Item >Home</Breadcrumb.Item>
+</LinkContainer>
+</Breadcrumb>
 <Row  className="justify-content-md-center m-5">
+  
     <Col > 
-     {<p>これはHomeの内容です。</p>}
+    
+     {<p>これはDashboadの内容です。</p>}
     </Col>
   </Row> 
 

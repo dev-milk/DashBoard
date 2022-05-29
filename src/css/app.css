@@ -10,6 +10,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+ /* Grid */
+ .grid-border {
+  border-bottom: inset 5px #090909;
+  }
+
 
 /* image */
 .bd-placeholder-img {
@@ -136,7 +141,3 @@ body {
     opacity: 0.5;
   }
   
-  /* Grid */
-  .grid-border {
-    border-bottom: inset 5px #090909;
-    }

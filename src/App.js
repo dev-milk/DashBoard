@@ -7,30 +7,34 @@ import {
   Col,
    } from 'react-bootstrap';
   import {BrowserRouter, Route, Routes } from "react-router-dom";
-  import Links from './Links';
+  import GlobalNav from './components/GlobalNav';
   import Home from './Home';
-  import Works from './Works';
-  import About from './About';
+  import Transaction from './Transaction';
+  import Notification from './Notification';
+  import Schedule from './Schedule';
   
  
-  
 
 function App() {
+ 
+  
   return (
     <div >
 
-<Container fluid>
+<Container>
 <Row >
     <Col xs={12} className="mx-0">
     <div>
       <BrowserRouter>
-        <Links /> 
+        <GlobalNav />       
          <Routes> 
         <Route exact path="/" element={<Home />} />
-          <Route exact path="/Works" element={<Works />} />
-          <Route exact path="/About" element={<About />} />
+        <Route exact path="/Notification" element={<Notification />} />
+        <Route exact path="/Transaction" element={<Transaction />} />
+        <Route exact path="/Schedule" element={<Schedule />} />
        </Routes> 
        </BrowserRouter>
+       
       </div> 
       </Col>
   </Row>
@@ -39,6 +43,8 @@ function App() {
 
   </div>
   );
+
+
 }
 
 export default App;
