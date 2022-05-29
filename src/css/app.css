@@ -75,6 +75,9 @@ body {
   .title-font {
     font-size: 3rem;
   }
+  .title-section {
+    font-size: 1.8rem;
+  }
   
   /* List */
   ul .mail-list {
