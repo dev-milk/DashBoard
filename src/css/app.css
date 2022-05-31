@@ -80,31 +80,29 @@ body {
   }
   
   /* List */
-  ul .mail-list {
-      list-style: none;
+  .mail-list {
+    padding-left: 5px;
+    line-height: 1.6em;
   }
-  ul li i {
-    padding-right: 1em;
-  }
-  ul li.mail-listg {
-      padding-left: 40px;
-      line-height: 1.6em;
-      background: url(../images/mail-sender01.png) left 0px top 10px no-repeat;
-      background-size: 30px auto;
-  }
-  ul li.mail-listp {
-      padding-left: 40px;
-      line-height: 1.6em;
-      background: url(../images/mail-sender02.png) left 0px top 10px no-repeat;
-      background-size: 30px auto;
-  }
-  ul li.mail-listv {
-      padding-left: 40px;
-      line-height: 1.6em;
-      background: url(../images/mail-sender03.png) left 0px top 10px no-repeat;
-      background-size: 30px auto;
-  }
-  
+
+.mail-sender01 {
+  padding-left: 30px;
+  background: url(../images/mail-sender01.png) left 0px top 5px no-repeat;
+  background-size: 20px auto;
+}
+
+.mail-sender02 {
+  padding-left: 30px;
+  background: url(../images/mail-sender02.png) left 0px top 5px no-repeat;
+  background-size: 20px auto;
+}
+
+.mail-sender03 {
+  padding-left: 30px;
+  background: url(../images/mail-sender03.png) left 0px top 5px no-repeat;
+  background-size: 20px auto;
+}
+
   
   /* Go Top*/
   .gotop{

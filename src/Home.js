@@ -28,30 +28,38 @@ function Home() {
 </Breadcrumb>
 
  {/* Notification */}
-<Row  className='g-5 mb-3'>
+<Row  className="g-5 mb-3">
     <Col > 
-    <Card className='rounded-0 grid-border'>
+    <Card className="rounded-0 grid-border">
   <Card.Body>
-    <Card.Title className='text-center title-section'>Notification</Card.Title>
+    <Card.Title className="text-center title-section">Notification</Card.Title>
 
-    <div className='d-md-flex justify-content-between'>
+    <div className="d-md-flex justify-content-between">
 
-    <div className='flex-fill align-self-center'>
-    <Image src={MailImg}  className='d-block mx-auto img-fluid' />
+    <div className="flex-fill align-self-center">
+    <Image src={MailImg}  className="d-block mx-auto img-fluid" />
     </div>
 
-    <div className='flex-fill'>
+    <div className="flex-fill">
     <ListGroup variant="flush">
-  <ListGroup.Item>Support Server&emsp; Maintenance&emsp;7days ago</ListGroup.Item>
-  <ListGroup.Item>Dapibus ac facilisis in</ListGroup.Item>
-  <ListGroup.Item>Morbi leo risus</ListGroup.Item>
-  <ListGroup.Item>Porta ac consectetur ac</ListGroup.Item>
+  <ListGroup.Item className="mail-list">
+    <span className="mail-sender01"></span>
+    Support Server&emsp; Maintenance&emsp;7days ago
+    </ListGroup.Item>
+  <ListGroup.Item className="mail-list">
+  <span className="mail-sender02"></span>
+    Dapibus ac facilisis in
+    </ListGroup.Item>
+  <ListGroup.Item className="mail-list">
+  <span className="mail-sender03"></span>
+    Morbi leo risus
+    </ListGroup.Item>
 </ListGroup>
     </div>
 
-    <div className='flex-fill align-self-md-end  text-center pb-1'>
+    <div className="flex-fill align-self-md-end  text-center pb-1">
     <LinkContainer to="/Transaction">
-    <Button variant='dark' className='btn-sm rounded-pill w-90 mt-5'>&gt;More</Button>
+    <Button variant="dark" className="btn-sm rounded-pill w-90 mt-5">&gt;More</Button>
     </LinkContainer>
     </div>
 
@@ -64,7 +72,7 @@ function Home() {
   {/* Coupon */}
 
 </Container>
-<Row  className='g-5 mb-3'>
+<Row  className="g-5 mb-3">
     <Col > 
     ここにクーポンコンテンツが入る。
     </Col>
@@ -72,7 +80,7 @@ function Home() {
   {/* Modal */}
 
   {/* Transaction / Schedule*/}
-  <Row  className='g-5 mb-3'>
+  <Row  className="g-5 mb-3">
     <Col > 
     ここに取引とスケジュールのコンテンツが入る。
     </Col>
