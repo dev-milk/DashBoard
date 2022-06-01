@@ -10,6 +10,7 @@ import {
   Button,
   Image,
   ListGroup,
+  Stack,
    } from 'react-bootstrap';
  import {LinkContainer} from "react-router-bootstrap";
  import MailImg from "./images/mail.png"; // mail.png
@@ -18,8 +19,8 @@ import {
 
 function Home() {
   return (
-    <div >
-<Container id="top">
+    <div  id="top">
+<Container >
   {/* パンくず */}
 <Breadcrumb>
 <LinkContainer to="/">
@@ -48,45 +49,69 @@ function Home() {
     </ListGroup.Item>
   <ListGroup.Item className="mail-list">
   <span className="mail-sender02"></span>
-    Dapibus ac facilisis in
+  Campain&emsp;10%OFF Monday Only &emsp;1 week ago
     </ListGroup.Item>
   <ListGroup.Item className="mail-list">
   <span className="mail-sender03"></span>
-    Morbi leo risus
+  Feedback &emsp;Your Yutor &emsp;2weeks ago
     </ListGroup.Item>
 </ListGroup>
     </div>
 
     <div className="flex-fill align-self-md-end  text-center pb-1">
-    <LinkContainer to="/Transaction">
+    <LinkContainer to="/Notification">
     <Button variant="dark" className="btn-sm rounded-pill w-90 mt-5">&gt;More</Button>
     </LinkContainer>
     </div>
 
     </div>
-      
   </Card.Body>
 </Card>
     </Col>
   </Row> 
+ 
   {/* Coupon */}
-
-</Container>
 <Row  className="g-5 mb-3">
     <Col > 
-    ここにクーポンコンテンツが入る。
+    <Card className="rounded-0 grid-border">
+  <Card.Body>
+    <Card.Title className="text-center title-section">Coupon</Card.Title>
+  </Card.Body>
+    </Card>
+
     </Col>
   </Row>
-  {/* Modal */}
 
   {/* Transaction / Schedule*/}
   <Row  className="g-5 mb-3">
     <Col > 
-    ここに取引とスケジュールのコンテンツが入る。
+    <Card className="rounded-0 grid-border">
+  <Card.Body>
+    <Card.Title className="text-center title-section">Transaction</Card.Title>
+  </Card.Body>
+  </Card>
+    </Col>
+    <Col > 
+    <Card className="rounded-0 grid-border">
+  <Card.Body>
+    <Card.Title className="text-center title-section">Schedule</Card.Title>
+  </Card.Body>
+  </Card>
     </Col>
   </Row>
-    
+
+   {/* Modal */}
+
+</Container >
+
+<Stack direction="horizontal"  className="mt-5 p-3">
+  <span className="text-muted">© devmilk.biz</span>
+</Stack>
+<div className="float-end mb-1">
+  <a href="#top" className="gotop"></a>
+</div>
   </div>
+
   );
 }
 
