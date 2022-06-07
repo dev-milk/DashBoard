@@ -7,7 +7,6 @@ import {
   Col,
    } from 'react-bootstrap';
   import {BrowserRouter, Route, Routes } from "react-router-dom";
-  import GlobalNav from './components/GlobalNav';
   import Home from './Home';
   import Transaction from './Transaction';
   import Notification from './Notification';
@@ -26,7 +25,7 @@ function App() {
     <Col xs={12} className="mx-0">
     <div>
       <BrowserRouter>
-        <GlobalNav />       
+             
          <Routes> 
         <Route exact path="/" element={<Home />} />
         <Route exact path="/Notification" element={<Notification />} />

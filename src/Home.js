@@ -13,8 +13,7 @@ import {
   Stack,
    } from 'react-bootstrap';
  import {LinkContainer} from "react-router-bootstrap";
- import MailImg from "./images/mail.png"; // mail.png
- 
+ import MailImg from "./images/mail.png"; 
  
 
 function Home() {
@@ -27,6 +26,35 @@ function Home() {
    <Breadcrumb.Item >Home</Breadcrumb.Item>
 </LinkContainer>
 </Breadcrumb>
+
+ {/* Transaction / Schedule*/}
+ <Row  className="g-5 mb-3">
+    <Col > 
+    <Card className="rounded-0 grid-border">
+  <Card.Body>
+    <Card.Title className="text-center title-section">Transaction</Card.Title>
+    <div className="flex-fill align-self-md-end  text-center pb-1">
+    <LinkContainer to="/Transaction">
+    <Button variant="dark" className="btn-sm rounded-pill w-90 mt-5">&gt;More</Button>
+    </LinkContainer>
+    </div>
+  
+  </Card.Body>
+  </Card>
+    </Col>
+    <Col > 
+    <Card className="rounded-0 grid-border">
+  <Card.Body>
+    <Card.Title className="text-center title-section">Schedule</Card.Title>
+    <div className="flex-fill align-self-md-end  text-center pb-1">
+    <LinkContainer to="/Schedule">
+    <Button variant="dark" className="btn-sm rounded-pill w-90 mt-5">&gt;More</Button>
+    </LinkContainer>
+    </div>
+  </Card.Body>
+  </Card>
+    </Col>
+  </Row>
 
  {/* Notification */}
 <Row  className="g-5 mb-3">
@@ -82,23 +110,7 @@ function Home() {
     </Col>
   </Row>
 
-  {/* Transaction / Schedule*/}
-  <Row  className="g-5 mb-3">
-    <Col > 
-    <Card className="rounded-0 grid-border">
-  <Card.Body>
-    <Card.Title className="text-center title-section">Transaction</Card.Title>
-  </Card.Body>
-  </Card>
-    </Col>
-    <Col > 
-    <Card className="rounded-0 grid-border">
-  <Card.Body>
-    <Card.Title className="text-center title-section">Schedule</Card.Title>
-  </Card.Body>
-  </Card>
-    </Col>
-  </Row>
+
 
    {/* Modal */}
 
