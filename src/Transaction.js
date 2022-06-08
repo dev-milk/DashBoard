@@ -12,7 +12,7 @@ import {
   Card,
   Stack,
   InputGroup,
-  FormControl,
+  Form,
    } from 'react-bootstrap';
  import {LinkContainer} from "react-router-bootstrap";
  import PigImg from "./images/pig.png"; 
@@ -56,12 +56,24 @@ function Transaction() {
     <div className="flex-fill align-self-center my-4">
     <Image src={PigImg}  className="d-block mx-auto img-fluid" />
     </div>
+      {/* test2 */}
     <div className="toggleArea">
       <InputGroup className="mb-3" type="checkbox" id="switch1">
         <label for="switch1"><span></span></label>
       <div id="swImg"></div>
     </InputGroup>
     </div>
+      {/* test2 */}
+    <div className="toggleArea">
+    <Form>
+  <Form.Check 
+    type="switch" id="switch2"  label=""
+  />
+   <label for="switch2"><span></span></label>
+   <div id="swImg2"></div>
+</Form>
+    </div>
+
   </Card.Body>
 </Card>
     </Col>

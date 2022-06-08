@@ -223,7 +223,7 @@ ul li.mail-listv {
 }
 
  /* チェック時丸（OFF）  */
-.toggleArea input[type="checkbox"]:checked ~ #swImg {
+.toggleArea input[type="checkbox"]:checked ~ #swImg, #swImg2 {
   transform     : translateX(48px);    /* 丸右へ移動   */
   background     : #fff;     /* カーソルタブの背景 */
 }
