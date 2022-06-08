@@ -166,15 +166,15 @@ ul li.mail-listv {
  /* Toggle Switch  */
  /*  共通部分  */
  .toggleArea {
-  line-height  : 28px;        /* 行の高さ  */
-  letter-spacing : 0;           /* 文字間    */
+  line-height  : 28px;        
+  letter-spacing : 0;          
   text-align  : center;              
   font-size  : 18px;    
   font-weight: 600;           
   position  : relative;     /* 親要素が基点  */
   margin  : auto;          /* 中央配置    */
   width  : 80px;              
-  background : #1985a1;      /* デフォルト背景色   */
+  background : #1985a1;      
   border-radius  : 19px;  
 }
 .toggleArea input[type="checkbox"] {
@@ -183,7 +183,7 @@ ul li.mail-listv {
 
  /*  デフォルト */
 .toggleArea label {
-  display        : block;        /* ボックス要素に変更 */
+  display        : block;        /* ボックス要素 */
   box-sizing     : border-box;        
   height         : 32px;                
   border         : 3px solid #1985a1;  
