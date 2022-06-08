@@ -56,7 +56,7 @@ function Transaction() {
     <div className="flex-fill align-self-center my-4">
     <Image src={PigImg}  className="d-block mx-auto img-fluid" />
     </div>
-      {/* test2 */}
+      {/* test1 */}
     <div className="toggleArea">
       <InputGroup className="mb-3" type="checkbox" id="switch1">
         <label for="switch1"><span></span></label>
