@@ -5,6 +5,7 @@ import {
   Container,
   Row,
   Col,
+  NavbarBrand,
   Breadcrumb,
   Card,
   Button,
@@ -19,7 +20,22 @@ import {
 function Home() {
   return (
     <div  id="top">
+  {/* DashBoad  Home*/}
 <Container >
+   {/*ヘッダー */}
+  <div className="d-flex flex-wrap align-items-center  justify-content-between py-3 mb-2 border-bottom">
+  <div className="d-flex align-items-center col-md-3 mb-2 mb-md-0">
+    <LinkContainer to="/">
+    <NavbarBrand>
+    <span className="logo-font text-dark text-decoration-none">Bootstrap Only</span>
+    </NavbarBrand>
+   </LinkContainer>
+     </div>
+   <div className="float-sm-end">
+   <Button variant="dark" className="btn-sm rounded w-90">Menu</Button>
+   </div>
+  </div>
+
   {/* パンくず */}
 <Breadcrumb>
 <LinkContainer to="/">
@@ -32,7 +48,7 @@ function Home() {
     <Col > 
     <Card className="rounded-0 grid-border">
   <Card.Body>
-    <Card.Title className="text-center title-section">Transaction</Card.Title>
+    <Card.Title className="text-center section-font">Transaction</Card.Title>
     <div className="flex-fill align-self-md-end  text-center pb-1">
     <LinkContainer to="/Transaction">
     <Button variant="dark" className="btn-sm rounded-pill w-90 mt-5">&gt;More</Button>
@@ -45,12 +61,13 @@ function Home() {
     <Col > 
     <Card className="rounded-0 grid-border">
   <Card.Body>
-    <Card.Title className="text-center title-section">Schedule</Card.Title>
+    <Card.Title className="text-center section-font">Schedule</Card.Title>
     <div className="flex-fill align-self-md-end  text-center pb-1">
-    <LinkContainer to="/Schedule">
+    <LinkContainer to="/Schedule"> 
     <Button variant="dark" className="btn-sm rounded-pill w-90 mt-5">&gt;More</Button>
     </LinkContainer>
     </div>
+
   </Card.Body>
   </Card>
     </Col>
@@ -61,7 +78,7 @@ function Home() {
     <Col > 
     <Card className="rounded-0 grid-border">
   <Card.Body>
-    <Card.Title className="text-center title-section">Notification</Card.Title>
+    <Card.Title className="text-center section-font">Notification</Card.Title>
 
     <div className="d-md-flex justify-content-between">
 
@@ -87,7 +104,7 @@ function Home() {
     </div>
 
     <div className="flex-fill align-self-md-end  text-center pb-1">
-    <LinkContainer to="/Notification">
+    <LinkContainer to="/Notification"> 
     <Button variant="dark" className="btn-sm rounded-pill w-90 mt-5">&gt;More</Button>
     </LinkContainer>
     </div>
@@ -103,15 +120,11 @@ function Home() {
     <Col > 
     <Card className="rounded-0 grid-border">
   <Card.Body>
-    <Card.Title className="text-center title-section">Coupon</Card.Title>
+    <Card.Title className="text-center section-font">Coupon</Card.Title>
   </Card.Body>
     </Card>
-
     </Col>
   </Row>
-
-
-
    {/* Modal */}
 
 </Container >

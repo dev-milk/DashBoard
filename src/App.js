@@ -19,18 +19,17 @@ function App() {
   
   return (
     <div >
-
+  {/* DashBoad  App*/}
 <Container>
 <Row >
     <Col xs={12} className="mx-0">
     <div>
       <BrowserRouter>
-             
          <Routes> 
         <Route exact path="/" element={<Home />} />
-        <Route exact path="/Notification" element={<Notification />} />
-        <Route exact path="/Transaction" element={<Transaction />} />
-        <Route exact path="/Schedule" element={<Schedule />} />
+        <Route exact path="//Transaction" element={<Transaction />} />
+        <Route exact path="/Schedule" element={<Schedule />} /> 
+        <Route exact path="/Notification" element={<Notification />} /> 
        </Routes> 
        </BrowserRouter>
        
