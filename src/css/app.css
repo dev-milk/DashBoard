@@ -219,7 +219,7 @@ ul li.mail-listv {
   top            : 4px;         /* 親要素からの位置   */
   left           : 4px;           /* 親要素からの位置   */
   border-radius  : 15px;               
-  transition     : .2s;         /* 滑らか変化         */
+  transition     : .2s;         /* スムーズ         */
 }
 
  /* チェック時丸（OFF）  */

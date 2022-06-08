@@ -56,22 +56,16 @@ function Transaction() {
     <div className="flex-fill align-self-center my-4">
     <Image src={PigImg}  className="d-block mx-auto img-fluid" />
     </div>
-      {/* test1 */}
-    <div className="toggleArea">
-      <InputGroup className="mb-3" type="checkbox" id="switch1">
-        <label for="switch1"><span></span></label>
-      <div id="swImg"></div>
-    </InputGroup>
-    </div>
-      {/* test2 */}
+
+
     <div className="toggleArea">
     <Form>
-  <Form.Check 
-    type="switch" id="switch2"  label=""
-  />
-   <label for="switch2"><span></span></label>
-   <div id="swImg2"></div>
-</Form>
+      <div className="toggleArea">
+        <input className="mb-3" type="checkbox" id="switch1" />
+        <label for="switch1"><span></span></label>
+        <div id="swImg"></div>
+      </div>
+    </Form>
     </div>
 
   </Card.Body>
