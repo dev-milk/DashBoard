@@ -1,4 +1,4 @@
-# DashBoad
+# DashBoard
 MyBootstrapOnly cording with React-Bootstrap
 
 カンプ
