@@ -16,6 +16,8 @@ import {
    } from 'react-bootstrap';
  import {LinkContainer} from "react-router-bootstrap";
  import PigImg from "./images/pig.png"; 
+ import BootstrapSwitchButton from 'bootstrap-switch-button-react'
+
 
  
  
@@ -57,7 +59,6 @@ function Transaction() {
     <Image src={PigImg}  className="d-block mx-auto img-fluid" />
     </div>
 
-
     <div className="toggleArea">
     <Form>
       <div className="toggleArea">
@@ -67,11 +68,24 @@ function Transaction() {
       </div>
     </Form>
     </div>
-
+  <p>トグルボタンテスト</p>
+    <BootstrapSwitchButton checked={true} size="lg" />
+<BootstrapSwitchButton checked={true} />
+<BootstrapSwitchButton checked={true} size="sm" />
+<BootstrapSwitchButton checked={true} size="xs" />
+<BootstrapSwitchButton checked={true} onstyle="primary" offstyle="info" />
+<BootstrapSwitchButton checked={true} onstyle="secondary" />
+<BootstrapSwitchButton checked={true} onstyle="success" />
+<BootstrapSwitchButton checked={true} onstyle="danger" />
+<BootstrapSwitchButton checked={true} onstyle="warning" />
+<BootstrapSwitchButton checked={true} onstyle="info" />
+<BootstrapSwitchButton checked={true} onstyle="light" />
+<BootstrapSwitchButton checked={true} onstyle="dark" />
   </Card.Body>
 </Card>
     </Col>
   </Row> 
+
  
 
 
