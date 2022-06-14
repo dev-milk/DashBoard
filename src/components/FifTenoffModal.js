@@ -6,7 +6,7 @@ import {
  } from 'react-bootstrap';
 
 
-export function Primary() {
+export function FifTenoff() {
     const [show, setShow] = useState(false);
   
     const handleClose = () => setShow(false);
@@ -14,15 +14,15 @@ export function Primary() {
   
     return (
       <>
-        <Button variant="primary" onClick={handleShow}>
-          Primary-color-botton
+        <Button variant="dark" className="btn-sm rounded-pill w-90 mb-2" onClick={handleShow}>
+          Menu
         </Button>
   
         <Modal show={show} onHide={handleClose}>
           <Modal.Header closeButton>
-            <Modal.Title>Modal Primary</Modal.Title>
+            <Modal.Title>15% Coupons</Modal.Title>
           </Modal.Header>
-          <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
+          <Modal.Body>Woohoo, you've got generaous Happy Coupons this time!</Modal.Body>
           <Modal.Footer>
             <Button variant="secondary" onClick={handleClose}>
               Close
@@ -36,4 +36,4 @@ export function Primary() {
     );
   }
 
-  export default Primary;
+  export default FifTenoff;

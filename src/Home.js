@@ -15,6 +15,15 @@ import {
    } from 'react-bootstrap';
  import {LinkContainer} from "react-router-bootstrap";
  import MailImg from "./images/mail.png"; 
+ import TenoffImg from "./images/10off.png";
+ import FifTenoffImg from "./images/15off.png";
+ import TwenoffImg from "./images/20off.png";
+ import QuartoffImg from "./images/25off.png";
+ import Tenoff from './components/TenoffModal';
+ import FifTenoff from './components/FifTenoffModal';
+ import Twenoff from './components/TwenoffModal';
+ import Quartoff from './components/QuartoffModal';
+
  
 
 function Home() {
@@ -98,7 +107,7 @@ function Home() {
     </ListGroup.Item>
   <ListGroup.Item className="mail-list">
   <span className="mail-sender03"></span>
-  Feedback &emsp;Your Yutor &emsp;2weeks ago
+  Feedback &emsp;Your Tutor &emsp;2weeks ago
     </ListGroup.Item>
 </ListGroup>
     </div>
@@ -108,7 +117,6 @@ function Home() {
     <Button variant="dark" className="btn-sm rounded-pill w-90 mt-5">&gt;More</Button>
     </LinkContainer>
     </div>
-
     </div>
   </Card.Body>
 </Card>
@@ -121,11 +129,39 @@ function Home() {
     <Card className="rounded-0 grid-border">
   <Card.Body>
     <Card.Title className="text-center section-font">Coupon</Card.Title>
+    <Container className="mx-4">
+      <Row>
+      <Col xs={12} sm={12} md={3} className="text-center py-3">
+      <Image src={TenoffImg}  className="img-fluid" />
+      <p>Until June30</p>
+        <Tenoff /> 
+        </Col>
+
+        <Col xs={12} sm={12} md={3} className="text-center py-3">
+      <Image src={FifTenoffImg}  className="img-fluid" />
+      <p>Until June30</p>
+        <FifTenoff />
+        </Col>
+
+        <Col xs={12} sm={12} md={3} className="text-center py-3">
+      <Image src={TwenoffImg}  className="img-fluid" />
+      <p>Until June30</p>
+       <Twenoff />
+        </Col>
+
+        <Col xs={12} sm={12} md={3} className="text-center py-3">
+      <Image src={QuartoffImg}  className="img-fluid" />
+      <p>Until June30</p>
+       <Quartoff />
+        </Col>
+      </Row>
+    </Container>
   </Card.Body>
     </Card>
+
     </Col>
   </Row>
-   {/* Modal */}
+  
 
 </Container >
 
