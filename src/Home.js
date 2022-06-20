@@ -72,9 +72,9 @@ function Home() {
   <Card.Body>
     <Card.Title className="text-center section-font">Schedule</Card.Title>
     <div className="flex-fill align-self-md-end  text-center pb-1">
-    <LinkContainer to="/Schedule"> 
-    <Button variant="dark" className="btn-sm rounded-pill w-90 mt-5">&gt;More</Button>
-    </LinkContainer>
+    
+    <Button variant="dark" className="btn-sm rounded-pill w-90 mt-5">&gt;No Link</Button>
+  
     </div>
 
   </Card.Body>
